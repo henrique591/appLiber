@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:liber_app/home/home.dart';
+import 'package:liber_app/homepage.dart';
+
+import 'home/detalhesLivros.dart';
+import 'login/login.dart';
 
 void main() {
   runApp(const LiberApp());
@@ -10,9 +13,9 @@ class LiberApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Homepage(),
+      home: DetalhesLivros(),
     );
   }
 }
